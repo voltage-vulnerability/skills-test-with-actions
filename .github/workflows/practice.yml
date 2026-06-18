@@ -12,8 +12,8 @@ jobs:
    steps:
      - name: verify git status
        run: |
-         git status
-         git branch
+         echo "This is good!"
+         echo "Thanks for checking"
          date
          echo "Finished checking git status!"
      - name: display workspace path
