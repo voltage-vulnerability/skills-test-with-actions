@@ -17,6 +17,6 @@ jobs:
          date
          echo "Finished checking git status!"
      - name: display workspace path
-       run: pwd && hostname && user
+       run: pwd && hostname && id
         
    
