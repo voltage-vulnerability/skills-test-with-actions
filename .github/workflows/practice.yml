@@ -1,0 +1,22 @@
+name: My manual automation script
+
+on:
+ pull_request:
+   branches:
+     - main
+
+jobs:
+  build-check:
+   runs-on:
+     - ubuntu-latest
+   steps:
+     - name: verify git status
+       run: |
+         echo "This is good!"
+         echo "Thanks for checking"
+         date
+         echo "Finished checking git status!"
+     - name: display workspace path
+       run: pwd && hostname && id
+        
+   
